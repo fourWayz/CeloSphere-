@@ -1,0 +1,44 @@
+{
+  "author": "fourways",
+  "bugs": {
+    "url": "https://github.com/celo-org/celo-composer/issues"
+  },
+  "description": "Custom Celo Composer project.",
+  "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+  "keywords": [
+    "celo-composer",
+    "celo"
+  ],
+  "license": "MIT",
+  "name": "celosphere",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celo-org/celo-composer.git"
+  },
+  "resolutions": {
+    "@wagmi/connectors": "5.7.7",
+    "@wagmi/core": "2.16.7",
+    "viem": "2.23.2",
+    "wagmi": "2.14.11"
+  },
+  "scripts": {
+    "react-app:dev": "yarn workspace @celosphere/react-app dev",
+    "react-app:build": "yarn workspace @celosphere/react-app build",
+    "react-app:start": "yarn workspace @celosphere/react-app start",
+    "react-app:lint": "yarn workspace @celosphere/react-app lint",
+    "hardhat:postinstall": "yarn workspace @celosphere/hardhat postinstall",
+    "hardhat:compile": "yarn workspace @celosphere/hardhat compile",
+    "hardhat:tsc": "yarn workspace @celosphere/hardhat tsc",
+    "hardhat:build": "yarn workspace @celosphere/hardhat build",
+    "hardhat:clean": "yarn workspace @celosphere/hardhat clean",
+    "hardhat:run:node": "yarn workspace @celosphere/hardhat run:node",
+    "hardhat:test": "yarn workspace @celosphere/hardhat test",
+    "hardhat:prettier": "yarn workspace @celosphere/hardhat prettier",
+    "hardhat:sync:abis": "yarn workspace @celosphere/hardhat sync:abis"
+  },
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}
