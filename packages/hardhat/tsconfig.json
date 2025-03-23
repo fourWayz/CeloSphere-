@@ -11,7 +11,8 @@
     "resolveJsonModule": true,
     "rootDirs": ["./test"],
     "useUnknownInCatchVariables": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "types": ["node"]
   },
   "include": ["./typechain", "./src", "./test", "./deploy", "./types"],
   "exclude": ["./node_modules/*"],

@@ -2,6 +2,7 @@ import '@nomicfoundation/hardhat-toolbox';
 import '@nomicfoundation/hardhat-verify';
 import { config as dotEnvConfig } from 'dotenv';
 import { HardhatUserConfig } from 'hardhat/config';
+import path from "path";
 
 dotEnvConfig();
 
@@ -43,7 +44,7 @@ const config: HardhatUserConfig = {
   sourcify: {
     enabled: false,
   },
-  solidity: '0.8.24',
+  solidity: '0.8.24'
 };
 
 export default config;
