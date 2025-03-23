@@ -68,5 +68,11 @@ describe('Celosphere', function () {
     const post = await socialMedia.getPost(0);
     expect(post.commentsCount.toString()).to.equal('1');
   });
+
+  it('should return correct user details by address', async function () {
+    const userDetails = await socialMedia.getUserByAddress(user1.address);
+    expect(userDetails.userAddress).to.equal(user1.address);
+    expect(userDetails.isRegistered).to.equal(true);
+  });
   
 });
